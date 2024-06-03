@@ -5,7 +5,7 @@ export interface Message extends Document{
     createdAt: Date
 }
 
-const messgaeSchema: Schema<Message> = new Schema({
+const messageSchema: Schema<Message> = new Schema({
     content:{
         type: String,
         required: true,
@@ -67,7 +67,7 @@ const userSchema: Schema<User> = new Schema({
         type: Boolean,
         default: true
     },
-    message:[messgaeSchema]
+    message:[messageSchema]
 })
 
 
